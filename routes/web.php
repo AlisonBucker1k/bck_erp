@@ -200,4 +200,17 @@ Route::get('/home/latestexpense','HomeController@latestexpense');
 Route::resource('home','HomeController');
 
 
+Route::get('/customers','CustomerController@index')->name('customers');
+Route::post('/customers/insert', 'CustomerController@insert')->name('customers.insert');
+Route::get('/customers/getList', 'CustomerController@show');
+Route::get('/customers/remove/{id}', 'CustomerController@remove')->name('customers.remove');
+Route::get('/customers/edit/{id}', 'CustomerController@edit')->name('customers.edit');
+Route::post('/customers/edit', 'CustomerController@editAction')->name('customers.editAction');
+
+Route::get('/products', 'ProductsController@index')->name('products');
+Route::post('/products/insert', 'ProductsController@insert')->name('products.insert');
+Route::get('/products/remove/{id}', 'ProductsController@remove')->name('products.remove');
+Route::get('/products/edit/{id}', 'ProductsController@edit')->name('products.edit');
+Route::post('/products/edit', 'ProductsController@editAction')->name('products.editAction');
+
 Route::get('/home', 'HomeController@index')->name('home');

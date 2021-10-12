@@ -71,6 +71,21 @@
 					<p><?php echo trans('lang.dashboard');?></p>
                 </a>
             </li>
+
+            <li class="{{ Request::is( 'customers') ? 'active' : '' }}">
+                <a href="{{ URL::to( 'customers') }}" >
+                    <i class="ti-user"></i>
+					<p>Clientes</p>
+                </a>
+            </li>
+
+            <li class="{{ Request::is( 'products') ? 'active' : '' }}">
+                <a href="{{ URL::to( 'products') }}" >
+                    <i class="ti-dropbox"></i>
+					<p>Produtos</p>
+                </a>
+            </li>
+
 			@if(Auth::check())
 				@if (Auth::user()->isrole('2'))
 			 <li class="{{ Request::is( 'transaction') ? 'active' : '' }}">
