@@ -91,24 +91,28 @@
                   <input type="text" class="form-control" name="name"  id="name" placeholder="Nome do Cliente" data-validation="required">
                 </div>
 				<div class="form-group">
+					<label>CPF</label>
+					<input type="text" class="form-control" name="cpf"  id="" placeholder="CPF">
+				  </div>
+				<div class="form-group">
 					<label>CEP</label>
-					<input class="form-control" required="" placeholder="CEP" id="zipcode" name="zipcode" type="text">
+					<input class="form-control"  placeholder="CEP" id="zipcode" name="zipcode" type="text">
 				</div>
                	<div class="form-group">
 					<label>Rua</label>
-					<input class="form-control" required="" placeholder="Rua" id="street" name="street" type="text">
+					<input class="form-control" placeholder="Rua" id="street" name="street" type="text">
 				</div>
                  <div class="form-group">
                   <label>Bairro</label>
-				  <input class="form-control" required="" placeholder="Bairro" id="neighborhood" name="neighborhood" type="text">
+				  <input class="form-control" placeholder="Bairro" id="neighborhood" name="neighborhood" type="text">
                 </div>
 				<div class="form-group">
 					<label>Cidade</label>
-					<input class="form-control" required="" placeholder="Cidade" id="" name="city" type="text">
+					<input class="form-control" placeholder="Cidade" id="" name="city" type="text">
 				</div>
 				<div class="form-group">
 					<label>Número</label>
-					<input class="form-control" required="" placeholder="Número" id="number" name="number" type="text">
+					<input class="form-control" placeholder="Número" id="number" name="number" type="text">
 				</div>
 				
 				 <div class="form-group">
@@ -117,11 +121,11 @@
                 </div>
 				<div class="form-group">
 					<label>Telefone</label>
-					<input class="form-control" required="" placeholder="Telefone" id="" name="phone" type="text">
+					<input class="form-control"  placeholder="Telefone" id="" name="phone" type="text">
 				</div>
 				<div class="form-group">
 					<label>Email</label>
-					<input class="form-control" required="" placeholder="Email" id="email" name="email" type="email">
+					<input class="form-control" placeholder="Email" id="email" name="email" type="email">
 				  </div>
               </div>
               <div class="modal-footer">

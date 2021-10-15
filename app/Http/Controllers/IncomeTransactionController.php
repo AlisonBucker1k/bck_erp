@@ -379,9 +379,9 @@ class IncomeTransactionController extends Controller
 
 		
 		if($request->hasFile('incomefile')) {
-			$this->validate($request, [
-				'incomefile' => 'image|mimes:jpeg,png,jpg,pdf|max:2048'
-				],$message);
+			// $this->validate($request, [
+			// 	'incomefile' => 'image|mimes:jpeg,png,jpg,pdf|max:2048'
+			// 	],$message);
 
 			$incomefilename  = $request->file('incomefile')->getClientOriginalName();
 			$request->file('incomefile')->move(public_path("/upload/income"), $incomefilename);
